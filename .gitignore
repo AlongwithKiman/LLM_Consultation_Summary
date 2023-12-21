@@ -1,0 +1,4 @@
+data_generate/data/*.json
+data_generate/test.csv
+
+.DS_Store

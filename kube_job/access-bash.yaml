@@ -1,0 +1,28 @@
+# nginx-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+spec:
+  restartPolicy: Never
+  containers:
+    - name: nginx-container
+      image: "python:3.10"
+      command: ["sh", "-c"]
+      args: ["sleep 300m"]
+      resources:
+        requests:
+          cpu: 28
+          memory: "112Gi"
+          nvidia.com/gpu: 1
+        limits:
+          cpu: 28
+          memory: "112Gi"
+          nvidia.com/gpu: 1
+      volumeMounts:
+        - mountPath: "/dataset"
+          name: nginx-pv
+  volumes:
+    - name: nginx-pv
+      persistentVolumeClaim:
+        claimName: llama-2-7b-pvc

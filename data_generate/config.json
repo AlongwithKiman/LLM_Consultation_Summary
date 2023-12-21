@@ -1,0 +1,9 @@
+{
+  "csv_file_path": "YOUR_INPUT_FILE_PATH_HERE",
+  "consultation_num_from": 10,
+  "consultation_num_to": 1,
+  "path_to_save": "YOUR_DATA_SAVE_DIR_HERE",
+  "OPENAI_API_KEY": "YOUR_KEY_HERE",
+  "min_summary_length": 10,
+  "max_summary_length": 200
+}

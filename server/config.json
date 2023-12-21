@@ -1,0 +1,10 @@
+{
+  "model_config": {
+    "model_id": "beomi/llama-2-ko-7b",
+    "pretrained": true,
+    "model_path": "YOUR MODEL PATH HERE",
+    "load_in_bit": 16,
+    "cache_dir": "YOUR CACHE DIR HERE",
+    "token": "YOUR TOKEN HERE"
+  }
+}
