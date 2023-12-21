@@ -13,4 +13,4 @@ Repository에 있는 코드 전부 직접 개발하였습니다.
 
 ### Demo Page URL
 - http://danbee-front.s3-website.ap-northeast-2.amazonaws.com/
-- `sample_inputs` 폴더에 input으로 활용 가능한 sample inputs text file이 들어있습니다.
+- `test_inputs` 폴더에 input으로 활용 가능한 sample inputs text file이 들어있습니다.
