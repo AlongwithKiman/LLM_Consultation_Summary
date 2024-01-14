@@ -52,15 +52,10 @@ if __name__ == "__main__":
                                             cache_dir=model_config["cache_dir"],\
                                             token=model_config["token"])
     elif quant_bit == 4:
-        bnb_config = BitsAndBytesConfig(
-        load_in_4bit=True,
-        bnb_4bit_quant_type="nf4",
-        bnb_4bit_compute_dtype=getattr(torch, "float16"),
-        bnb_4bit_use_double_quant=False,
-        )
         model = LlamaForCausalLM.from_pretrained(model_id,\
-                                            quantization_config=bnb_config,\
+                                            load_in_4bit=True,\
                                             device_map='auto',\
+                                            torch_dtype=torch.float16,\
                                             cache_dir=model_config["cache_dir"],\
                                             token=model_config["token"])
 
